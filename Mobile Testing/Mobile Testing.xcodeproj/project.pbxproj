@@ -12,7 +12,6 @@
 		CD105E2520B4D05E005A8446 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD105E2420B4D05E005A8446 /* RoundedButton.swift */; };
 		CD105E2720B4D128005A8446 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD105E2620B4D128005A8446 /* Constants.swift */; };
 		CD105E2920B4D97F005A8446 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD105E2820B4D97F005A8446 /* QuizVC.swift */; };
-		CD105E2B20B4DA2D005A8446 /* MenuBarGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD105E2A20B4DA2D005A8446 /* MenuBarGradient.swift */; };
 		CD9CB15220ADA0E90025E093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9CB15120ADA0E90025E093 /* AppDelegate.swift */; };
 		CD9CB15420ADA0E90025E093 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9CB15320ADA0E90025E093 /* LoginVC.swift */; };
 		CD9CB15720ADA0E90025E093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9CB15520ADA0E90025E093 /* Main.storyboard */; };
@@ -29,7 +28,6 @@
 		CD105E2420B4D05E005A8446 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		CD105E2620B4D128005A8446 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CD105E2820B4D97F005A8446 /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
-		CD105E2A20B4DA2D005A8446 /* MenuBarGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarGradient.swift; sourceTree = "<group>"; };
 		CD9CB14E20ADA0E80025E093 /* Mobile Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9CB15120ADA0E90025E093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD9CB15320ADA0E90025E093 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 			children = (
 				CD105E2220B4D041005A8446 /* GradientView.swift */,
 				CD105E2420B4D05E005A8446 /* RoundedButton.swift */,
-				CD105E2A20B4DA2D005A8446 /* MenuBarGradient.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD105E2B20B4DA2D005A8446 /* MenuBarGradient.swift in Sources */,
 				CD9CB15420ADA0E90025E093 /* LoginVC.swift in Sources */,
 				CD105E2920B4D97F005A8446 /* QuizVC.swift in Sources */,
 				CD105E2520B4D05E005A8446 /* RoundedButton.swift in Sources */,
