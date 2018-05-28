@@ -25,7 +25,8 @@ class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
         leftMenuTable.dataSource = self
         leftMenuTable.delegate = self
         
-        tableViewData = [cellData(opened: false, title: "Languages", sectionData: DataService.instance.getLanguages())]
+        tableViewData = [cellData(opened: false, title: "Learning", sectionData: DataService.instance.getLanguages()),
+        cellData(opened: false, title: "Testing", sectionData: DataService.instance.getLanguages())]
     }
     
     //number of sections
@@ -47,7 +48,12 @@ class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 0{
             guard let cell = leftMenuTable.dequeueReusableCell(withIdentifier: "CustomCell") as? CustomCell else {return UITableViewCell()}
             cell.cellTitle?.text = tableViewData[indexPath.section].title
-            cell.cellImage.image = nil
+            cell.cellTitle.font = UIFont.boldSystemFont(ofSize: cell.cellTitle.font.pointSize)
+            if tableViewData[indexPath.section].opened == false {
+                cell.cellImage.image = UIImage(named: "expand.png")
+            } else{
+                cell.cellImage.image = UIImage(named: "collapse.png")
+            }
              return cell
         }
         else{

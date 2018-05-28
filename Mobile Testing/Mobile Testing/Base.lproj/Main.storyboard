@@ -126,8 +126,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="java" translatesAutoresizingMaskIntoConstraints="NO" id="qz4-Lh-qif">
-                                                    <rect key="frame" x="128" y="16" width="50" height="40"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="java" translatesAutoresizingMaskIntoConstraints="NO" id="qz4-Lh-qif">
+                                                    <rect key="frame" x="200" y="18.5" width="90" height="28"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="28" id="03m-ah-XkO"/>
                                                         <constraint firstAttribute="width" constant="90" id="qDJ-q8-6Z7"/>
@@ -137,7 +137,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="GEz-e6-8tc" firstAttribute="centerY" secondItem="mWP-s4-VtD" secondAttribute="centerY" id="QFN-ax-t28"/>
-                                                <constraint firstItem="qz4-Lh-qif" firstAttribute="leading" secondItem="GEz-e6-8tc" secondAttribute="trailing" constant="60" id="d8M-A8-KIw"/>
+                                                <constraint firstAttribute="trailing" secondItem="qz4-Lh-qif" secondAttribute="trailing" constant="85" id="eP8-EU-B3I"/>
                                                 <constraint firstItem="qz4-Lh-qif" firstAttribute="centerY" secondItem="mWP-s4-VtD" secondAttribute="centerY" id="hNc-5F-0mZ"/>
                                                 <constraint firstItem="GEz-e6-8tc" firstAttribute="leading" secondItem="mWP-s4-VtD" secondAttribute="leading" constant="20" id="xy5-LS-wck"/>
                                             </constraints>
