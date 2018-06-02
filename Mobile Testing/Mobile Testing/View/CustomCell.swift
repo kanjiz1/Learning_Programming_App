@@ -14,7 +14,7 @@ class CustomCell: UITableViewCell{
     @IBOutlet weak var cellImage: UIImageView!
     @IBOutlet weak var cellTitle: UILabel!
   
-    func updateViews(category: Language){
+    func updateViews(category: LearningTopic){
         cellImage.image = UIImage(named: category.imageName)
         cellTitle.text = category.title
     }

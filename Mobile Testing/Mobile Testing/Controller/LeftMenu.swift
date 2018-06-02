@@ -11,7 +11,7 @@ import UIKit
 struct cellData{
     var opened = Bool()
     var title = String()
-    var sectionData = [Any]()
+    var sectionData = [LearningTopic]()
 }
 
 class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -25,9 +25,14 @@ class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
         leftMenuTable.dataSource = self
         leftMenuTable.delegate = self
         
-        tableViewData = [cellData(opened: false, title: "Learning", sectionData: DataService.instance.getLanguages()),
-        cellData(opened: false, title: "Testing", sectionData: DataService.instance.getLanguages())]
+        tableViewData = [cellData(opened: false, title: "Languages", sectionData: DataService.instance.getLanguages()),
+        cellData(opened: false, title: "Learning", sectionData: DataService.instance.getLearning())]
     }
+    
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+    }
+    
     
     //number of sections
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -58,9 +63,19 @@ class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         else{
             if let cell = leftMenuTable.dequeueReusableCell(withIdentifier: "CustomCell") as? CustomCell{
-                let languages = DataService.instance.getLanguages()[dataIndex]
-                cell.updateViews(category: languages)
-                cell.layer.cornerRadius = 2.0
+                if tableViewData[indexPath.section].title == "Languages"{
+                    let languages = DataService.instance.getLanguages()[dataIndex]
+                    cell.updateViews(category: languages)
+                    cell.layer.cornerRadius = 2.0
+                    cell.cellTitle.font = UIFont.systemFont(ofSize: cell.cellTitle.font.pointSize)
+                }
+                
+                if tableViewData[indexPath.section].title == "Learning"{
+                    let languages = DataService.instance.getLearning()[dataIndex]
+                    cell.updateViews(category: languages)
+                    cell.layer.cornerRadius = 2.0
+                    cell.cellTitle.font = UIFont.systemFont(ofSize: cell.cellTitle.font.pointSize)
+                }
                 
                 let whiteRoundedView : UIView = UIView(frame: CGRect(x: 10, y: 8, width: self.view.frame.size.width - 20, height: 120))
                 

@@ -7,13 +7,27 @@ target 'Mobile Testing' do
 
   # Pods for Mobile Testing
 pod 'Alamofire', '~> 4.7'
-  pod 'AlamofireImage', '~> 3.3'
+pod 'AlamofireImage', '~> 3.3'
 pod 'SwiftyJSON', '~> 4.0'
-  pod 'Socket.IO-Client-Swift', '~> 13.2.0'
+pod 'Socket.IO-Client-Swift', '~> 13.2.0'
 pod 'SnapKit', '~> 4.0.0'
- pod "CollectionKit"
-  pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+pod 'CollectionKit'
+pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
 pod 'ARCL'
-pod "ViewAnimator"
+# pod 'SwifterSwift'
+pod 'ViewAnimator'
+pod 'Firebase'
+pod 'Firebase/Auth'
+pod 'Firebase/Core'
+pod 'SegueManager/R.swift'
+pod 'R.swift'
+
+# Workaround for Cocoapods issue #7606
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    end
+end
 end

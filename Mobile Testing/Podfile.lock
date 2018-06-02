@@ -2,11 +2,49 @@ PODS:
   - Alamofire (4.7.2)
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
-  - ARCL (1.0.2)
+  - ARCL (1.0.3)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
   - CollectionKit (1.3.0)
+  - Firebase (5.1.0):
+    - Firebase/Core (= 5.1.0)
+  - Firebase/Auth (5.1.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (= 5.0.0)
+  - Firebase/Core (5.1.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.0.1)
+  - Firebase/CoreOnly (5.1.0):
+    - FirebaseCore (= 5.0.2)
+  - FirebaseAnalytics (5.0.1):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseAuth (5.0.0):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (5.0.2):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (3.0.0):
+    - FirebaseCore (~> 5.0)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GTMSessionFetcher/Core (1.1.15)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - SegueManager/iOS (4.0.0)
+  - SegueManager/R.swift (4.0.0):
+    - R.swift.Library
+    - SegueManager/iOS
   - SnapKit (4.0.0)
   - Socket.IO-Client-Swift (13.2.0):
     - Starscream (~> 3.0.2)
@@ -21,6 +59,11 @@ DEPENDENCIES:
   - ARCL
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - CollectionKit
+  - Firebase
+  - Firebase/Auth
+  - Firebase/Core
+  - R.swift
+  - SegueManager/R.swift
   - SnapKit (~> 4.0.0)
   - Socket.IO-Client-Swift (~> 13.2.0)
   - Spring (from `https://github.com/MengTo/Spring.git`)
@@ -33,6 +76,17 @@ SPEC REPOS:
     - AlamofireImage
     - ARCL
     - CollectionKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseInstanceID
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
+    - nanopb
+    - R.swift
+    - R.swift.Library
+    - SegueManager
     - SnapKit
     - Socket.IO-Client-Swift
     - Starscream
@@ -56,9 +110,20 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
-  ARCL: 88300cadfbdd6a9288ca17ad18d3ac972d6cb1e6
+  ARCL: a9db4b6d1e37772484cfff142ef1674720db3494
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   CollectionKit: 4cdc1125fae3f6e8714d5f516a82b79f48f75317
+  Firebase: e08fb0795f35707aeb1d8a715c731c45bdf6fd56
+  FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
+  FirebaseAuth: acbeef02fe7c3a26624e309849f3fe30c84115af
+  FirebaseCore: b81044df1044c0857a0737c6324678b72d4f7f00
+  FirebaseInstanceID: 83e0040351565df711a5db3d8ebe5ea21aca998a
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  SegueManager: e4970e6f7150c81ec577e0b61d9fda3f27c11db5
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Socket.IO-Client-Swift: 4698ea9eb2955eecf7fdf06c487ff1597e4cd779
   Spring: 3c7666eccefdeb87140008dc81043f89f8dbb787
@@ -66,6 +131,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   ViewAnimator: 43c31539508d995ea2c5e98338211f7c009b358f
 
-PODFILE CHECKSUM: 5084040658cf2ebbd941df3257453e5a824f789d
+PODFILE CHECKSUM: 55fcb31d6f7af3c2dd77ce8ef7d9c994f815ac5b
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

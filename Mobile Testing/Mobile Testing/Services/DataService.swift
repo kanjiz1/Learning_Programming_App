@@ -9,13 +9,24 @@
 import Foundation
 class DataService{
      static let instance = DataService()
+    //Maps, Pathway
+    private let languages = [LearningTopic(title: "Java", imageName: "java.jpg"),
+                             LearningTopic(title: "C++", imageName: "C++.png"),
+                             LearningTopic(title: "Swift", imageName: "swift-og.png")]
     
-    private let languages = [Language(title: "Java", imageName: "java.jpg"),
-                             Language(title: "C++", imageName: "C++.png"),
-                             Language(title: "Swift", imageName: "swift-og.png")]
     
-    func getLanguages() -> [Language]{
+    private let learning = [(LearningTopic(title: "Algorithms", imageName: "algorithms.png")),
+                            LearningTopic(title: "Data Structures", imageName:"dataStructures.png"),
+                            LearningTopic(title: "Regular Expressions", imageName: "RegEx.png")]
+    
+    private let wikipedia = LearningTopic(title: "Wikipedia", imageName: "wikipedia.png")
+    
+    func getLanguages() -> [LearningTopic]{
         return languages
+    }
+    
+    func getLearning() -> [LearningTopic] {
+        return learning
     }
     
     //What to do when a language is clicked
