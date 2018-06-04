@@ -24,7 +24,8 @@
 		CD9CB16A20ADA2260025E093 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9CB16820ADA2250025E093 /* SWRevealViewController.m */; };
 		CDAFAC1E20C339120003BF6F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAFAC1D20C339120003BF6F /* LoginVC.swift */; };
 		CDAFAC2020C3392A0003BF6F /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAFAC1F20C3392A0003BF6F /* CreateAccountVC.swift */; };
-		CDBBC9B520C5358F006A0546 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBBC9B420C5358F006A0546 /* ProfileVC.swift */; };
+		CDBBC9B720C53DFE006A0546 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBBC9B620C53DFE006A0546 /* AlertController.swift */; };
+		CDDAD39120C5B47C0047BF7C /* AlgorithmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAD39020C5B47C0047BF7C /* AlgorithmsVC.swift */; };
 		D36FF0FD1B2EEDA653A393B1 /* Pods_Mobile_Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF3D9376368C8D8012DD198 /* Pods_Mobile_Testing.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +53,8 @@
 		CD9CB16920ADA2260025E093 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		CDAFAC1D20C339120003BF6F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CDAFAC1F20C3392A0003BF6F /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
-		CDBBC9B420C5358F006A0546 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		CDBBC9B620C53DFE006A0546 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		CDDAD39020C5B47C0047BF7C /* AlgorithmsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsVC.swift; sourceTree = "<group>"; };
 		F89FB8FA71625D4BD3D61C1A /* Pods-Mobile Testing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Testing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Testing/Pods-Mobile Testing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,7 +131,7 @@
 				CD105E2820B4D97F005A8446 /* QuizVC.swift */,
 				CDAFAC1D20C339120003BF6F /* LoginVC.swift */,
 				CDAFAC1F20C3392A0003BF6F /* CreateAccountVC.swift */,
-				CDBBC9B420C5358F006A0546 /* ProfileVC.swift */,
+				CDDAD39020C5B47C0047BF7C /* AlgorithmsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,6 +142,7 @@
 				CD105E2220B4D041005A8446 /* GradientView.swift */,
 				CD105E2420B4D05E005A8446 /* RoundedButton.swift */,
 				CD77675720B8460D00E789F9 /* CustomCell.swift */,
+				CDBBC9B620C53DFE006A0546 /* AlertController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				"${BUILT_PRODUCTS_DIR}/CollectionKit/CollectionKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SegueManager/SegueManager.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -302,6 +306,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SegueManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -326,8 +331,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD9CB15420ADA0E90025E093 /* LeftMenu.swift in Sources */,
+				CDBBC9B720C53DFE006A0546 /* AlertController.swift in Sources */,
 				CDAFAC2020C3392A0003BF6F /* CreateAccountVC.swift in Sources */,
-				CDBBC9B520C5358F006A0546 /* ProfileVC.swift in Sources */,
 				CD77675A20B84C2D00E789F9 /* LearningTopic.swift in Sources */,
 				CDAFAC1E20C339120003BF6F /* LoginVC.swift in Sources */,
 				CD105E2920B4D97F005A8446 /* QuizVC.swift in Sources */,
@@ -335,6 +340,7 @@
 				CD9CB15220ADA0E90025E093 /* AppDelegate.swift in Sources */,
 				CD77675C20B84E4700E789F9 /* DataService.swift in Sources */,
 				CD77675820B8460D00E789F9 /* CustomCell.swift in Sources */,
+				CDDAD39120C5B47C0047BF7C /* AlgorithmsVC.swift in Sources */,
 				CD105E2320B4D041005A8446 /* GradientView.swift in Sources */,
 				CD34C10720B5C478009AAB4A /* Questions.swift in Sources */,
 				CD9CB16A20ADA2260025E093 /* SWRevealViewController.m in Sources */,

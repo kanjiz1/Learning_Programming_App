@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 struct cellData{
     var opened = Bool()
@@ -19,10 +20,18 @@ class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var leftMenuTable: UITableView!
     var tableViewData = [cellData]()
+    
+    var languageOptions = ["Java", "C++", "Swift"]
+    var learningOptions = ["Algorithms", "DataStructures", "Regex"]
+    
+    var username: String?
+    
+    let storagePath = UserDefaults.standard.object(forKey: "uid") as? String 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 70
+        self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 70
+        
         leftMenuTable.dataSource = self
         leftMenuTable.delegate = self
         
@@ -30,11 +39,38 @@ class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cellData(opened: false, title: "Learning", sectionData: DataService.instance.getLearning())]
     }
     
-    @IBAction func loginButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_LOGIN, sender: nil)
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        if UserDefaults.standard.bool(forKey: "uid") == true{
+            username = Auth.auth().currentUser!.displayName
+            loginButton.setTitle("Logout \(username!)", for: .normal)
+        }
+        loginButton.setNeedsDisplay()
     }
     
+    
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        if loginButton.currentTitle == "Login"{
+            if let presentedViewController = self.storyboard?.instantiateViewController(withIdentifier: TO_LOGIN) as? LoginVC {
+                loginButton.setTitle("Logout", for: .normal)
+                self.present(presentedViewController, animated: true, completion: nil)
+            }
+            
+        } else if loginButton.currentTitle == "Logout"{
+            print("ookay!!!")
+            loginButton.setTitle("Login", for: .normal)
+            do{
+                try Auth.auth().signOut()
+                print("Signed Out")
+                DispatchQueue.main.async {
+                    UserDefaults.standard.removeObject(forKey: "uid")
+                    UserDefaults.standard.synchronize()
+                }
+            } catch{
+                print(error.localizedDescription)
+            }
+        }
+    }
     
     //number of sections
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -108,7 +144,12 @@ class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 let sections = IndexSet.init(integer: indexPath.section)
                 tableView.reloadSections(sections, with: .none) // play with animations
             }
+        } else{
+            self.performSegue(withIdentifier: learningOptions[indexPath.row - 1], sender: self)
         }
     }
+    
+    
+    
 }
 

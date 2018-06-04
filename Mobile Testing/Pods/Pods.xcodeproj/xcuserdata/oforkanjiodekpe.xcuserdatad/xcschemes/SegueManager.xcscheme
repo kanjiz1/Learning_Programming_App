@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "28ACF0BF523267BB208A2F2F54697085"
+               BlueprintIdentifier = "3FA2143DD1CEDB7F7AA0D54CABDCEE7B"
                BlueprintName = "SegueManager"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "SegueManager.framework">

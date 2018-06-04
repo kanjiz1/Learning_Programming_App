@@ -20,6 +20,9 @@ PODS:
   - Firebase/Database (5.1.0):
     - Firebase/CoreOnly
     - FirebaseDatabase (= 5.0.1)
+  - Firebase/Storage (5.1.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (= 3.0.0)
   - FirebaseAnalytics (5.0.1):
     - FirebaseCore (~> 5.0)
     - FirebaseInstanceID (~> 3.0)
@@ -35,10 +38,14 @@ PODS:
     - leveldb-library (~> 1.18)
   - FirebaseInstanceID (3.0.0):
     - FirebaseCore (~> 5.0)
+  - FirebaseStorage (3.0.0):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleToolboxForMac/Defines (2.1.4)
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - GTMSessionFetcher/Core (1.1.15)
+  - KeychainSwift (11.0.0)
   - leveldb-library (1.20)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
@@ -70,6 +77,8 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - Firebase/Storage
+  - KeychainSwift (~> 11.0)
   - R.swift
   - SegueManager/R.swift
   - SnapKit (~> 4.0.0)
@@ -90,8 +99,10 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseDatabase
     - FirebaseInstanceID
+    - FirebaseStorage
     - GoogleToolboxForMac
     - GTMSessionFetcher
+    - KeychainSwift
     - leveldb-library
     - nanopb
     - R.swift
@@ -129,8 +140,10 @@ SPEC CHECKSUMS:
   FirebaseCore: b81044df1044c0857a0737c6324678b72d4f7f00
   FirebaseDatabase: 482bad9c2abd422bb2321194fb8c937e67426a89
   FirebaseInstanceID: 83e0040351565df711a5db3d8ebe5ea21aca998a
+  FirebaseStorage: 7ca4bb7b58a25fa647b04f524033fc7cb7eb272b
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  KeychainSwift: bea6bd9f98af7b8d7ca4aa79fe105c00fab532db
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
@@ -143,6 +156,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   ViewAnimator: 43c31539508d995ea2c5e98338211f7c009b358f
 
-PODFILE CHECKSUM: 81c3d351623fb341d3418981e2e20dc339e6d7a3
+PODFILE CHECKSUM: 881c99d357ae7e892de60f37b6f69e496367482e
 
 COCOAPODS: 1.5.3
