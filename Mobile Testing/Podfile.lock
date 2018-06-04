@@ -1,12 +1,6 @@
 PODS:
-  - Alamofire (4.7.2)
-  - AlamofireImage (3.3.1):
-    - Alamofire (~> 4.5)
   - ARCL (1.0.3)
-  - ChameleonFramework/Default (2.1.0)
-  - ChameleonFramework/Swift (2.1.0):
-    - ChameleonFramework/Default
-  - CollectionKit (1.3.0)
+  - DropDownMenuKit (0.8.4)
   - Firebase (5.1.0):
     - Firebase/Core (= 5.1.0)
   - Firebase/Auth (5.1.0):
@@ -52,47 +46,23 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - R.swift (4.0.0):
-    - R.swift.Library (~> 4.0.0)
-  - R.swift.Library (4.0.0)
-  - SegueManager/iOS (4.0.0)
-  - SegueManager/R.swift (4.0.0):
-    - R.swift.Library
-    - SegueManager/iOS
   - SnapKit (4.0.0)
-  - Socket.IO-Client-Swift (13.2.0):
-    - Starscream (~> 3.0.2)
-  - Spring (1.0.5)
-  - Starscream (3.0.5)
-  - SwiftyJSON (4.1.0)
-  - ViewAnimator (2.1.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.7)
-  - AlamofireImage (~> 3.3)
   - ARCL
-  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
-  - CollectionKit
+  - DropDownMenuKit
   - Firebase
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
   - KeychainSwift (~> 11.0)
-  - R.swift
-  - SegueManager/R.swift
   - SnapKit (~> 4.0.0)
-  - Socket.IO-Client-Swift (~> 13.2.0)
-  - Spring (from `https://github.com/MengTo/Spring.git`)
-  - SwiftyJSON (~> 4.0)
-  - ViewAnimator
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Alamofire
-    - AlamofireImage
     - ARCL
-    - CollectionKit
+    - DropDownMenuKit
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -105,35 +75,11 @@ SPEC REPOS:
     - KeychainSwift
     - leveldb-library
     - nanopb
-    - R.swift
-    - R.swift.Library
-    - SegueManager
     - SnapKit
-    - Socket.IO-Client-Swift
-    - Starscream
-    - SwiftyJSON
-    - ViewAnimator
-
-EXTERNAL SOURCES:
-  ChameleonFramework:
-    :git: https://github.com/ViccAlexander/Chameleon.git
-  Spring:
-    :git: https://github.com/MengTo/Spring.git
-
-CHECKOUT OPTIONS:
-  ChameleonFramework:
-    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
-    :git: https://github.com/ViccAlexander/Chameleon.git
-  Spring:
-    :commit: c540239f3590bbaf4a35c3959c329dd5ed4e3eee
-    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
-  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   ARCL: a9db4b6d1e37772484cfff142ef1674720db3494
-  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  CollectionKit: 4cdc1125fae3f6e8714d5f516a82b79f48f75317
+  DropDownMenuKit: 3800deee46883bb09725376d987900768532f588
   Firebase: e08fb0795f35707aeb1d8a715c731c45bdf6fd56
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
   FirebaseAuth: acbeef02fe7c3a26624e309849f3fe30c84115af
@@ -146,16 +92,8 @@ SPEC CHECKSUMS:
   KeychainSwift: bea6bd9f98af7b8d7ca4aa79fe105c00fab532db
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
-  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
-  SegueManager: e4970e6f7150c81ec577e0b61d9fda3f27c11db5
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  Socket.IO-Client-Swift: 4698ea9eb2955eecf7fdf06c487ff1597e4cd779
-  Spring: 3c7666eccefdeb87140008dc81043f89f8dbb787
-  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
-  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
-  ViewAnimator: 43c31539508d995ea2c5e98338211f7c009b358f
 
-PODFILE CHECKSUM: 881c99d357ae7e892de60f37b6f69e496367482e
+PODFILE CHECKSUM: a027f10cdb08e4c4e8e79fc40679bd85ce248bbe
 
 COCOAPODS: 1.5.3

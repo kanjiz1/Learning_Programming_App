@@ -30,7 +30,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2369" y="-4"/>
+            <point key="canvasLocation" x="-3249" y="-37"/>
         </scene>
         <!--QuizVC-->
         <scene sceneID="z3m-Cf-qxa">
@@ -97,35 +97,73 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpZ-ub-Cim" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543" y="413"/>
+            <point key="canvasLocation" x="-1329" y="81"/>
         </scene>
-        <!--View Controller-->
+        <!--Data StructuresVC-->
         <scene sceneID="zwY-p4-23h">
             <objects>
-                <viewController id="j1M-nK-mnl" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="W4A-Dq-kl0"/>
-                        <viewControllerLayoutGuide type="bottom" id="LyB-ax-eq4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Re7-sQ-jux">
+                <viewController id="j1M-nK-mnl" customClass="DataStructuresVC" customModule="Mobile_Testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <wkWebView key="view" contentMode="scaleToFill" id="D6d-cg-kL8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Giu-3f-MTq">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="ifP-UU-Obi"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="QKo-P9-tyb"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
+                    <navigationItem key="navigationItem" id="QKo-P9-tyb">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="XBu-SR-zpx"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="XBu-SR-zpx" id="r7C-Pf-gHY"/>
+                        <outlet property="webView" destination="D6d-cg-kL8" id="rB6-iU-rT4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqx-yh-Mjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552" y="407"/>
+            <point key="canvasLocation" x="-327" y="81"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qYw-Qe-gKX">
+            <objects>
+                <navigationController id="AGj-ka-P2T" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LXz-Py-GEO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vly-qW-bYG" kind="relationship" relationship="rootViewController" id="Nhp-ky-YIV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64o-eG-Qsb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-674" y="895"/>
+        </scene>
+        <!--RegexVC-->
+        <scene sceneID="ArC-5g-Tci">
+            <objects>
+                <viewController id="vly-qW-bYG" customClass="RegexVC" customModule="Mobile_Testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <wkWebView key="view" contentMode="scaleToFill" id="hlb-zj-bXa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
+                    <navigationItem key="navigationItem" id="0WH-To-2PC">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="5jg-Vm-1y7"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="5jg-Vm-1y7" id="ebp-Cb-4uO"/>
+                        <outlet property="webView" destination="hlb-zj-bXa" id="cQd-z5-EL0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="waY-pe-dH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="768"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v1B-GS-fxL">
@@ -141,13 +179,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxM-Eq-3VB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-841" y="-364"/>
+            <point key="canvasLocation" x="-1433" y="-716"/>
         </scene>
         <!--AlgorithmsVC-->
         <scene sceneID="Gjp-pn-6ze">
             <objects>
                 <viewController id="lut-oI-wOV" customClass="AlgorithmsVC" customModule="Mobile_Testing" customModuleProvider="target" sceneMemberID="viewController">
-                    <wkWebView key="view" contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" id="Cpa-LM-7JQ">
+                    <wkWebView key="view" contentMode="scaleToFill" id="eKU-ue-DnX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -161,7 +199,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="1se-eH-OHD" id="uCj-ne-L2W"/>
-                        <outlet property="webView" destination="Cpa-LM-7JQ" id="1tO-wI-BjS"/>
+                        <outlet property="webView" destination="eKU-ue-DnX" id="YJT-ez-bXN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jw0-gq-src" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -285,11 +323,13 @@
                         <outlet property="leftMenuTable" destination="a50-vT-f9P" id="khd-hF-CrN"/>
                         <outlet property="loginButton" destination="Plw-mq-FBg" id="VHp-V9-hOa"/>
                         <segue destination="v3U-o8-eKa" kind="custom" identifier="Algorithms" customClass="SWRevealViewControllerSeguePushController" id="70a-9C-rlT"/>
+                        <segue destination="ylw-G0-lEF" kind="custom" identifier="DataStructures" customClass="SWRevealViewControllerSeguePushController" id="O22-h6-NFd"/>
+                        <segue destination="AGj-ka-P2T" kind="custom" identifier="Regex" customClass="SWRevealViewControllerSeguePushController" id="Rhl-tQ-OeZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sT6-Cp-sYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1634" y="152"/>
+            <point key="canvasLocation" x="-2274" y="-391"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vKO-vI-hLV">
@@ -572,7 +612,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJo-tf-m0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bDg-07-gMk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-615" y="733"/>
+            <point key="canvasLocation" x="-1574" y="862"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="R9k-UD-RFS">
@@ -735,7 +775,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2G8-gp-uZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hNH-pY-BEL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-3039" y="-4"/>
+            <point key="canvasLocation" x="-4017" y="-37"/>
         </scene>
     </scenes>
     <resources>

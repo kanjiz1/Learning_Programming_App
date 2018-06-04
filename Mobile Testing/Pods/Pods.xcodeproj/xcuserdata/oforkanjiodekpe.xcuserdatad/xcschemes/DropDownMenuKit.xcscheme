@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38ACA430605AFB4229712A18BDDF5086"
-               BlueprintName = "KeychainSwift"
+               BlueprintIdentifier = "C3B0D4ADAAB95D2754E11D3C6B547D09"
+               BlueprintName = "DropDownMenuKit"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "KeychainSwift.framework">
+               BuildableName = "DropDownMenuKit.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

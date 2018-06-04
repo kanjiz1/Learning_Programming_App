@@ -1,24 +1,24 @@
 //
-//  AlgorithmsVC.swift
+//  RegexVC.swift
 //  Mobile Testing
 //
-//  Created by Oforkanji Odekpe on 6/4/18.
+//  Created by Oforkanji Odekpe on 6/5/18.
 //  Copyright © 2018 Oforkanji Odekpe. All rights reserved.
 //
 
 import UIKit
 import WebKit
 
-class AlgorithmsVC: UIViewController {
-    
+class RegexVC: UIViewController {
+
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
-        navigationController?.navigationBar.topItem?.title = "Algorithms!"
+        navigationController?.navigationBar.topItem?.title = "Regular Expressions!"
         let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         
@@ -30,7 +30,7 @@ class AlgorithmsVC: UIViewController {
         menuButton.target = self.revealViewController()
         menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
         
-        let url = URL(string: "https://en.wikipedia.org/wiki/Algorithm")
+        let url = URL(string: "https://en.wikipedia.org/wiki/Regular_expression")
         webView.load(URLRequest(url: url!))
     }
     
@@ -39,5 +39,5 @@ class AlgorithmsVC: UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
     }
-    
+
 }

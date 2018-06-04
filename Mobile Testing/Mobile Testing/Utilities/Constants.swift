@@ -17,6 +17,8 @@ let PROFILE_PAGE = "toProfile"
 let TO_QUIZ_MENU = "toQuizMenu"
 let TO_LEFT_MENU = "leftMenu"
 let TO_ALGORITHMS = "Algorithms"
+let TO_DATA_STRUCTURE = "DataStructures"
+let TO_REGEX = "Regex"
 
 //"Java", "C++", "Swift", "DataStructures", "Regex"
 
