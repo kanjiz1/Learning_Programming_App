@@ -18,6 +18,14 @@
 		CD13BF5320C5DD0D00F6BE98 /* PFTableCellContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD13BF4D20C5DD0C00F6BE98 /* PFTableCellContentView.m */; };
 		CD13BF5520C5E54C00F6BE98 /* DataStructuresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13BF5420C5E54C00F6BE98 /* DataStructuresVC.swift */; };
 		CD13BF5720C5E74C00F6BE98 /* RegexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13BF5620C5E74C00F6BE98 /* RegexVC.swift */; };
+		CD13BF5A20C5F2DC00F6BE98 /* GoogleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13BF5920C5F2DC00F6BE98 /* GoogleVC.swift */; };
+		CD13BF5C20C5F31600F6BE98 /* TutorialsPointVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13BF5B20C5F31600F6BE98 /* TutorialsPointVC.swift */; };
+		CD13BF5E20C5F69000F6BE98 /* JavaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13BF5D20C5F69000F6BE98 /* JavaVC.swift */; };
+		CD13BF6020C5F6A400F6BE98 /* C++VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13BF5F20C5F6A400F6BE98 /* C++VC.swift */; };
+		CD13BF6220C5F6B100F6BE98 /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13BF6120C5F6B100F6BE98 /* SwiftVC.swift */; };
+		CD13BF6420C5FE2500F6BE98 /* JavaWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13BF6320C5FE2500F6BE98 /* JavaWeb.swift */; };
+		CD13BF6620C5FE4D00F6BE98 /* C++Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13BF6520C5FE4D00F6BE98 /* C++Web.swift */; };
+		CD13BF6820C5FE5B00F6BE98 /* SwiftWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13BF6720C5FE5B00F6BE98 /* SwiftWeb.swift */; };
 		CD341B7B20C18ACB005D3EC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD341B7A20C18ACB005D3EC9 /* GoogleService-Info.plist */; };
 		CD34C10720B5C478009AAB4A /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34C10620B5C478009AAB4A /* Questions.swift */; };
 		CD77675820B8460D00E789F9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77675720B8460D00E789F9 /* CustomCell.swift */; };
@@ -56,6 +64,14 @@
 		CD13BF4E20C5DD0D00F6BE98 /* PFConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFConfiguration.h; sourceTree = "<group>"; };
 		CD13BF5420C5E54C00F6BE98 /* DataStructuresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructuresVC.swift; sourceTree = "<group>"; };
 		CD13BF5620C5E74C00F6BE98 /* RegexVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexVC.swift; sourceTree = "<group>"; };
+		CD13BF5920C5F2DC00F6BE98 /* GoogleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVC.swift; sourceTree = "<group>"; };
+		CD13BF5B20C5F31600F6BE98 /* TutorialsPointVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsPointVC.swift; sourceTree = "<group>"; };
+		CD13BF5D20C5F69000F6BE98 /* JavaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaVC.swift; sourceTree = "<group>"; };
+		CD13BF5F20C5F6A400F6BE98 /* C++VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "C++VC.swift"; sourceTree = "<group>"; };
+		CD13BF6120C5F6B100F6BE98 /* SwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVC.swift; sourceTree = "<group>"; };
+		CD13BF6320C5FE2500F6BE98 /* JavaWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaWeb.swift; sourceTree = "<group>"; };
+		CD13BF6520C5FE4D00F6BE98 /* C++Web.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "C++Web.swift"; sourceTree = "<group>"; };
+		CD13BF6720C5FE5B00F6BE98 /* SwiftWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWeb.swift; sourceTree = "<group>"; };
 		CD341B7A20C18ACB005D3EC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD34C10620B5C478009AAB4A /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		CD77675720B8460D00E789F9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -178,6 +194,14 @@
 				CDDAD39020C5B47C0047BF7C /* AlgorithmsVC.swift */,
 				CD13BF5420C5E54C00F6BE98 /* DataStructuresVC.swift */,
 				CD13BF5620C5E74C00F6BE98 /* RegexVC.swift */,
+				CD13BF5920C5F2DC00F6BE98 /* GoogleVC.swift */,
+				CD13BF5B20C5F31600F6BE98 /* TutorialsPointVC.swift */,
+				CD13BF5D20C5F69000F6BE98 /* JavaVC.swift */,
+				CD13BF5F20C5F6A400F6BE98 /* C++VC.swift */,
+				CD13BF6120C5F6B100F6BE98 /* SwiftVC.swift */,
+				CD13BF6320C5FE2500F6BE98 /* JavaWeb.swift */,
+				CD13BF6520C5FE4D00F6BE98 /* C++Web.swift */,
+				CD13BF6720C5FE5B00F6BE98 /* SwiftWeb.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -371,23 +395,31 @@
 				CDBBC9B720C53DFE006A0546 /* AlertController.swift in Sources */,
 				CDAFAC2020C3392A0003BF6F /* CreateAccountVC.swift in Sources */,
 				CD13BF5220C5DD0D00F6BE98 /* PFTableView.m in Sources */,
+				CD13BF6420C5FE2500F6BE98 /* JavaWeb.swift in Sources */,
 				CD77675A20B84C2D00E789F9 /* LearningTopic.swift in Sources */,
 				CDAFAC1E20C339120003BF6F /* LoginVC.swift in Sources */,
 				CD105E2920B4D97F005A8446 /* QuizVC.swift in Sources */,
+				CD13BF5A20C5F2DC00F6BE98 /* GoogleVC.swift in Sources */,
 				CD105E2520B4D05E005A8446 /* RoundedButton.swift in Sources */,
 				CD9CB15220ADA0E90025E093 /* AppDelegate.swift in Sources */,
 				CD13BF5120C5DD0D00F6BE98 /* PFConfiguration.m in Sources */,
 				CD77675C20B84E4700E789F9 /* DataService.swift in Sources */,
+				CD13BF5E20C5F69000F6BE98 /* JavaVC.swift in Sources */,
 				CD77675820B8460D00E789F9 /* CustomCell.swift in Sources */,
 				CD13BF5020C5DD0D00F6BE98 /* PFTableViewCell.m in Sources */,
 				CDDAD39120C5B47C0047BF7C /* AlgorithmsVC.swift in Sources */,
 				CD105E2320B4D041005A8446 /* GradientView.swift in Sources */,
 				CD34C10720B5C478009AAB4A /* Questions.swift in Sources */,
+				CD13BF6020C5F6A400F6BE98 /* C++VC.swift in Sources */,
 				CD13BF5720C5E74C00F6BE98 /* RegexVC.swift in Sources */,
 				CD13BF4F20C5DD0D00F6BE98 /* PFNavigationDropdownMenu.m in Sources */,
+				CD13BF5C20C5F31600F6BE98 /* TutorialsPointVC.swift in Sources */,
 				CD9CB16A20ADA2260025E093 /* SWRevealViewController.m in Sources */,
+				CD13BF6220C5F6B100F6BE98 /* SwiftVC.swift in Sources */,
 				CD105E2720B4D128005A8446 /* Constants.swift in Sources */,
+				CD13BF6620C5FE4D00F6BE98 /* C++Web.swift in Sources */,
 				CD13BF5520C5E54C00F6BE98 /* DataStructuresVC.swift in Sources */,
+				CD13BF6820C5FE5B00F6BE98 /* SwiftWeb.swift in Sources */,
 				CD13BF5320C5DD0D00F6BE98 /* PFTableCellContentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

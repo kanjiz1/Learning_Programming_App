@@ -19,9 +19,11 @@ let TO_LEFT_MENU = "leftMenu"
 let TO_ALGORITHMS = "Algorithms"
 let TO_DATA_STRUCTURE = "DataStructures"
 let TO_REGEX = "Regex"
-
-//"Java", "C++", "Swift", "DataStructures", "Regex"
-
+let TO_TUTORIALS = "TutorialsPoint"
+let TO_GOOGLE = "Google"
+let TO_JAVA = "Java"
+let TO_CPP = "C++"
+let TO_SWIFT = "Swift"
 
 // User Defaults
 let LOGGED_IN_KEY = "loggedIn"

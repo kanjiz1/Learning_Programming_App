@@ -22,7 +22,7 @@ class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var tableViewData = [cellData]()
     
     var languageOptions = ["Java", "C++", "Swift"]
-    var learningOptions = ["Algorithms", "DataStructures", "Regex"]
+    var learningOptions = ["Algorithms", "DataStructures", "Regex", "TutorialsPoint", "Google"]
     
     var username: String?
     
@@ -145,7 +145,11 @@ class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 tableView.reloadSections(sections, with: .none) // play with animations
             }
         } else{
-            self.performSegue(withIdentifier: learningOptions[indexPath.row - 1], sender: self)
+            if indexPath.section == 0 {
+                self.performSegue(withIdentifier: languageOptions[indexPath.row - 1], sender: self)
+            } else if indexPath.section == 1{
+                self.performSegue(withIdentifier: learningOptions[indexPath.row - 1], sender: self)
+            }
         }
     }
     

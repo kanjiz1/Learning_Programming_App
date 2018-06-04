@@ -18,7 +18,9 @@ class DataService{
     
     private let learning = [(LearningTopic(title: "Algorithms", imageName: "algorithms.png")),
                             LearningTopic(title: "Data Structures", imageName:"dataStructures.png"),
-                            LearningTopic(title: "Regular Expressions", imageName: "RegEx.png")]
+                            LearningTopic(title: "Regular Expressions", imageName: "RegEx.png"),
+                            LearningTopic(title: "Tutorials Point", imageName: "tutorials.png"),
+                            LearningTopic(title: "Google Search", imageName: "google.png")]
     
     private let wikipedia = LearningTopic(title: "Wikipedia", imageName: "wikipedia.png")
     
