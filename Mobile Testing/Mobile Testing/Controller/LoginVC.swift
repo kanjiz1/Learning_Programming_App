@@ -11,8 +11,10 @@ import Firebase
 
 class LoginVC: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var username: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         username.delegate = self
