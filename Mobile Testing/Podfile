@@ -20,6 +20,7 @@ pod 'ViewAnimator'
 pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Core'
+pod 'Firebase/Database'
 pod 'SegueManager/R.swift'
 pod 'R.swift'
 

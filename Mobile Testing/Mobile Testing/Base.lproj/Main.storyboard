@@ -195,6 +195,7 @@
                     </view>
                     <connections>
                         <outlet property="leftMenuTable" destination="a50-vT-f9P" id="khd-hF-CrN"/>
+                        <outlet property="loginButton" destination="Plw-mq-FBg" id="VHp-V9-hOa"/>
                         <segue destination="ZEb-wZ-Mc2" kind="show" identifier="toLogin" id="hBM-iC-hPm"/>
                     </connections>
                 </viewController>
@@ -229,6 +230,9 @@
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="ZEb-wZ-Mc2" eventType="touchUpInside" id="VX6-le-Sog"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9O0-WW-38C">
                                 <rect key="frame" x="331" y="28" width="28" height="28"/>
@@ -257,7 +261,7 @@
                                             <constraint firstAttribute="width" constant="250" id="hIK-E7-3z4"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKH-3V-mXE" customClass="Login">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKH-3V-mXE">
                                         <rect key="frame" x="0.0" y="50" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="VbX-Us-abV"/>
@@ -276,42 +280,51 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkV-gW-oRy">
-                                <rect key="frame" x="56" y="320" width="263" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="LtU-HN-ZAQ"/>
-                                    <constraint firstAttribute="width" constant="263" id="Rin-Jr-4Bk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Don't Have an Account? Sign Up Here."/>
-                                <connections>
-                                    <action selector="signUpButtonPressed:" destination="ZEb-wZ-Mc2" eventType="touchUpInside" id="8qZ-bh-TI4"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFb-A7-Fps">
                                 <rect key="frame" x="161.5" y="50" width="53.5" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLJ-0u-0Sa" customClass="RoundedButton" customModule="Mobile_Testing" customModuleProvider="target">
+                                <rect key="frame" x="62" y="340" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TKv-y8-OZe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="WkS-xM-exB"/>
+                                    <constraint firstAttribute="width" constant="250" id="bTK-36-7qe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="wTU-LV-shX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccountButtonPressed:" destination="ZEb-wZ-Mc2" eventType="touchUpInside" id="H9z-jg-V34"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FFb-A7-Fps" firstAttribute="centerX" secondItem="G0R-wc-p7D" secondAttribute="centerX" id="6s9-4T-9nG"/>
-                            <constraint firstItem="XkV-gW-oRy" firstAttribute="centerX" secondItem="G0R-wc-p7D" secondAttribute="centerX" id="CcH-HT-pED"/>
                             <constraint firstItem="tx1-6I-Czk" firstAttribute="top" secondItem="Fn4-oc-TMP" secondAttribute="bottom" constant="40" id="DYb-q4-ZyV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9O0-WW-38C" secondAttribute="trailing" id="Q5W-x6-VhJ"/>
+                            <constraint firstItem="vLJ-0u-0Sa" firstAttribute="centerX" secondItem="G0R-wc-p7D" secondAttribute="centerX" id="R3m-7I-lZl"/>
                             <constraint firstItem="9O0-WW-38C" firstAttribute="top" secondItem="G0R-wc-p7D" secondAttribute="topMargin" constant="8" id="S9h-oC-6BE"/>
                             <constraint firstItem="Fn4-oc-TMP" firstAttribute="centerX" secondItem="G0R-wc-p7D" secondAttribute="centerX" id="UpL-D8-qbs"/>
                             <constraint firstItem="FFb-A7-Fps" firstAttribute="top" secondItem="dZg-T7-vAE" secondAttribute="bottom" constant="30" id="Y0A-Oc-Fj4"/>
                             <constraint firstItem="tx1-6I-Czk" firstAttribute="centerX" secondItem="G0R-wc-p7D" secondAttribute="centerX" id="gcD-rd-aCr"/>
                             <constraint firstItem="Fn4-oc-TMP" firstAttribute="top" secondItem="FFb-A7-Fps" secondAttribute="bottom" constant="70" id="hCO-l2-Jzj"/>
-                            <constraint firstItem="XkV-gW-oRy" firstAttribute="top" secondItem="tx1-6I-Czk" secondAttribute="bottom" id="wVX-4e-rTR"/>
+                            <constraint firstItem="vLJ-0u-0Sa" firstAttribute="top" secondItem="tx1-6I-Czk" secondAttribute="bottom" constant="20" id="hql-Cj-kVE"/>
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="KSo-Zi-Qfc" kind="show" identifier="toCreateAccount" id="EMb-ha-lix"/>
+                        <outlet property="password" destination="NKH-3V-mXE" id="7OK-Rs-8cn"/>
+                        <outlet property="username" destination="2vB-dP-egC" id="wnV-dE-oT3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ura-yQ-tPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -472,7 +485,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJo-tf-m0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bDg-07-gMk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1599" y="549"/>
+            <point key="canvasLocation" x="-1242" y="709"/>
         </scene>
     </scenes>
     <resources>

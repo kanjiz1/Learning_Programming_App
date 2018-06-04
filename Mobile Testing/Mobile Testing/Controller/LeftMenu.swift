@@ -16,6 +16,7 @@ struct cellData{
 
 class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var leftMenuTable: UITableView!
     var tableViewData = [cellData]()
 
@@ -31,6 +32,7 @@ class LeftMenu: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBAction func loginButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        
     }
     
     
