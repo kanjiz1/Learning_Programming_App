@@ -43,8 +43,8 @@ class C__VC: UIViewController {
     }
     
     @IBAction func testYourKnowledgePressed(_ sender: Any) {
-        
+        if let presentedViewController = self.storyboard?.instantiateViewController(withIdentifier: "CplusTest") as? C__TestVC {
+            self.present(presentedViewController, animated: true, completion: nil)
+        }
     }
-    
-
 }
