@@ -55,7 +55,6 @@ class C__TestVC: UIViewController {
         } else{
             NSLog("Done!")
             let percentage = Float(100 * (score / total))
-            score = 0
             
             if let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier :"ResultsVC") as? ResultVC{
                 nextVC.result = "Final Results: \n \(percentage)%"
