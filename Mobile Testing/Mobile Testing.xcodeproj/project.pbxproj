@@ -31,6 +31,7 @@
 		CD57227820C68C5E007B9B72 /* C++TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD57227720C68C5E007B9B72 /* C++TestVC.swift */; };
 		CD57227A20C68C6D007B9B72 /* SwiftTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD57227920C68C6D007B9B72 /* SwiftTestVC.swift */; };
 		CD57227C20C6B814007B9B72 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD57227B20C6B814007B9B72 /* ResultVC.swift */; };
+		CD57227E20C72040007B9B72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD57227D20C72040007B9B72 /* GoogleService-Info.plist */; };
 		CD77675820B8460D00E789F9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77675720B8460D00E789F9 /* CustomCell.swift */; };
 		CD77675A20B84C2D00E789F9 /* LearningTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77675920B84C2D00E789F9 /* LearningTopic.swift */; };
 		CD77675C20B84E4700E789F9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77675B20B84E4700E789F9 /* DataService.swift */; };
@@ -80,6 +81,7 @@
 		CD57227720C68C5E007B9B72 /* C++TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "C++TestVC.swift"; sourceTree = "<group>"; };
 		CD57227920C68C6D007B9B72 /* SwiftTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestVC.swift; sourceTree = "<group>"; };
 		CD57227B20C6B814007B9B72 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		CD57227D20C72040007B9B72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD77675720B8460D00E789F9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		CD77675920B84C2D00E789F9 /* LearningTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningTopic.swift; sourceTree = "<group>"; };
 		CD77675B20B84E4700E789F9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				CD9CB15820ADA0EA0025E093 /* Assets.xcassets */,
 				CD9CB15A20ADA0EA0025E093 /* LaunchScreen.storyboard */,
 				CD9CB15D20ADA0EA0025E093 /* Info.plist */,
+				CD57227D20C72040007B9B72 /* GoogleService-Info.plist */,
 				CD341B7A20C18ACB005D3EC9 /* GoogleService-Info.plist */,
 			);
 			path = "Mobile Testing";
@@ -351,6 +354,7 @@
 			files = (
 				CD9CB15C20ADA0EA0025E093 /* LaunchScreen.storyboard in Resources */,
 				CD341B7B20C18ACB005D3EC9 /* GoogleService-Info.plist in Resources */,
+				CD57227E20C72040007B9B72 /* GoogleService-Info.plist in Resources */,
 				CD9CB15920ADA0EA0025E093 /* Assets.xcassets in Resources */,
 				CD9CB15720ADA0E90025E093 /* Main.storyboard in Resources */,
 			);
